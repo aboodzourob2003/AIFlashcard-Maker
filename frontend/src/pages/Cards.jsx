@@ -6,6 +6,8 @@ import FlashCard from '../components/FlashCard'
 import { useFlashcardStore } from '../store/useStore'
 import { createDeck } from '../api/decks'
 
+// this for testing commits 
+
 export default function Cards() {
   const navigate = useNavigate()
   const { generatedCards, generationMeta, startSession } = useFlashcardStore()
