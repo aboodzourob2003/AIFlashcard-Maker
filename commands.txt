@@ -1,0 +1,20 @@
+# DB name
+flashcard_db
+
+# frontend commands
+
+cd frontend
+npm install # this just for first time when u want to install the frontend project packages
+npm run dev # this for every time u want to run the project
+
+# backend commands
+
+pip install -r requirements.txt # first time to installl the packages
+
+# Apply DB migrations every time u add new table
+python -m alembic upgrade head
+
+# to run the backend when u neeed it 
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+
